@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.dravid.sgpacalci2.Welcome"
+    android:background="#ff5555">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/wel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/name"
+        android:layout_below="@+id/wel"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Semester"
+        android:id="@+id/s"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/semester"
+        android:layout_below="@+id/s"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter total subjects"
+        android:id="@+id/subjects"
+        android:layout_below="@+id/semester"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/sub"
+        android:layout_below="@+id/subjects"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Total Credits"
+        android:id="@+id/c"
+        android:layout_below="@+id/sub"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/credits"
+        android:layout_below="@+id/c"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate SGPA"
+        android:id="@+id/sgpa"
+        android:layout_below="@+id/credits"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onGPA"
+        android:background="#ffff00" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CGPA"
+        android:id="@+id/cgpa"
+        android:layout_below="@+id/sgpa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="#ffff00"
+        android:onClick="onGPA" />
+
+    <Button
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View SGPA"
+        android:id="@+id/bsgpa"
+        android:onClick="onGPA"
+        android:layout_below="@+id/sgpa"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffff00" />
+
+
+
+</RelativeLayout>

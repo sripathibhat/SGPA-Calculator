@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.dravid.sgpacalci2.After_Login"
+    android:id="@+id/layout"
+    android:background="#00ffff">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome"
+        android:id="@+id/wel"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/name"
+        android:layout_below="@+id/wel"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Choose an action below"
+        android:id="@+id/choice"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:textStyle="italic"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW ENTERED SGPA"
+        android:id="@+id/view"
+        android:background="#ffff00"
+        android:onClick="onSGPA"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE NEW SGPA"
+        android:id="@+id/newgpa"
+        android:layout_below="@+id/view"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view"
+        android:layout_marginTop="47dp"
+        android:background="#ffff00"
+        android:onClick="onSGPA" />
+</RelativeLayout>
